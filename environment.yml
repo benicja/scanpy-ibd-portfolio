@@ -12,11 +12,10 @@ dependencies:
   - matplotlib
   - seaborn
   - scikit-learn
+  - scikit-image
   - numba
   - leidenalg
   - python-igraph
   - h5py
   - anndata
   - scanpy
-  - pip:
-      - scrublet

@@ -22,8 +22,25 @@ environment.yml   Conda environment spec
 ### Option 1 — conda (recommended)
 
 Requires conda. On Windows we recommend
-[Miniforge](https://github.com/conda-forge/miniforge/releases) (installs a lean
-conda pre-configured to use the `conda-forge` channel).
+[Miniforge](https://github.com/conda-forge/miniforge/releases) (lean installer,
+pre-configured for the `conda-forge` channel).
+
+**First-time install of Miniforge on Windows:**
+
+1. Download
+   [`Miniforge3-Windows-x86_64.exe`](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe).
+2. Run the installer. Accept defaults, except on the *Advanced Options* screen
+   tick **Add Miniforge3 to my PATH environment variable** (off by default).
+   Leave *Register Miniforge3 as the system Python* **unticked** if you already
+   have another Python installation.
+3. Close and reopen any terminals so `conda` becomes available on the PATH.
+4. Verify with `conda --version`.
+
+**macOS / Linux:** download the matching installer from the
+[Miniforge releases page](https://github.com/conda-forge/miniforge/releases)
+and run `bash Miniforge3-<os>-<arch>.sh`.
+
+**Create the project environment:**
 
 ```
 git clone https://github.com/benicja/scanpy-ibd-portfolio.git
@@ -32,6 +49,9 @@ conda env create -f environment.yml
 conda activate scanpy
 jupyter lab
 ```
+
+First run takes ~10 minutes (downloads ~500 MB of packages). Subsequent
+activations are instant.
 
 ### Option 2 — pip + venv (fallback)
 

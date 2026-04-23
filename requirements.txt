@@ -9,10 +9,10 @@ scipy
 matplotlib
 seaborn
 scikit-learn
+scikit-image
 numba
 leidenalg
 igraph
 h5py
 anndata
 scanpy
-scrublet
