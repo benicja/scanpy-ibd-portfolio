@@ -1,0 +1,42 @@
+# --- Data files (never commit) ---
+data/
+*.h5ad
+*.h5
+*.mtx
+*.mtx.gz
+*.loom
+*.csv
+*.tsv
+*.tsv.gz
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Conda / virtualenv ---
+.venv/
+venv/
+env/
+.conda/
+
+# --- IDE / tooling ---
+.vscode/
+.idea/
+.claude/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Figures (optional — uncomment to ignore) ---
+# figures/

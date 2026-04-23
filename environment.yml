@@ -1,0 +1,22 @@
+name: scanpy
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - jupyterlab
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - numba
+  - leidenalg
+  - python-igraph
+  - h5py
+  - anndata
+  - scanpy
+  - pip:
+      - scrublet
