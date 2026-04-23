@@ -1,0 +1,18 @@
+# Pip fallback for users without conda.
+# Mirrors environment.yml — keep in sync manually when adding packages.
+# Recommended: Python 3.11 in a fresh virtualenv.
+
+jupyterlab
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+scikit-learn
+numba
+leidenalg
+igraph
+h5py
+anndata
+scanpy
+scrublet

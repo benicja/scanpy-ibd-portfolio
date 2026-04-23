@@ -19,18 +19,40 @@ environment.yml   Conda environment spec
 
 ## Setup
 
-Requires conda (Miniforge recommended on Windows). One-time:
+### Option 1 — conda (recommended)
+
+Requires conda. On Windows we recommend
+[Miniforge](https://github.com/conda-forge/miniforge/releases) (installs a lean
+conda pre-configured to use the `conda-forge` channel).
 
 ```
+git clone https://github.com/benicja/scanpy-ibd-portfolio.git
+cd scanpy-ibd-portfolio
 conda env create -f environment.yml
 conda activate scanpy
-```
-
-Then launch Jupyter:
-
-```
 jupyter lab
 ```
+
+### Option 2 — pip + venv (fallback)
+
+If conda is unavailable, a plain virtualenv works too:
+
+```
+git clone https://github.com/benicja/scanpy-ibd-portfolio.git
+cd scanpy-ibd-portfolio
+python -m venv .venv
+# Windows:  .venv\Scripts\activate
+# macOS/Linux:  source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab
+```
+
+### Adding new packages
+
+`environment.yml` is hand-curated — do **not** regenerate it with
+`conda env export` (which dumps hundreds of platform-specific transitive
+dependencies). When adding a new package, install it, then manually add one
+line to both `environment.yml` and `requirements.txt`, and commit.
 
 ## Data
 
