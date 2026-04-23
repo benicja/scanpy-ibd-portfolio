@@ -12,6 +12,8 @@ data/
 # --- Jupyter ---
 .ipynb_checkpoints/
 *.ipynb_checkpoints
+*.executed.ipynb
+*.nbconvert.ipynb
 
 # --- Python ---
 __pycache__/
@@ -38,5 +40,5 @@ env/
 Thumbs.db
 desktop.ini
 
-# --- Figures (optional — uncomment to ignore) ---
-# figures/
+# --- Figures (regenerated on each notebook run) ---
+notebooks/figures/
